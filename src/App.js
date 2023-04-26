@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/main/Home";
+import AddMarkerForm from "./components/forms/createForm/AddMarkerForm";
+import UpdateMarkerForm from "./components/forms/updateForm/UpdateMarkerForm";
+
+//theme
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+
+//core
+import "primereact/resources/primereact.min.css";
+
+//icons
+import "primeicons/primeicons.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/add-marker-form" element={<AddMarkerForm />}></Route>
+        <Route
+          path="/update-marker-form/:id"
+          element={<UpdateMarkerForm />}
+        ></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
