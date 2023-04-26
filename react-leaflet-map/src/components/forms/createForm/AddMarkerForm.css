@@ -1,0 +1,20 @@
+.closeButton{
+    float: right;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.addButton{
+    float: left;
+    border: none;
+    color: white;
+    padding: 1px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 55px;
+}

@@ -1,0 +1,34 @@
+.p-input-icon-left{
+    color: #495057;
+    background: #f8f9fa;
+}
+.p-datatable .p-datatable-thead th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .p-datatable .p-datatable-thead th:hover {
+    background-color:gray;
+    color: #fff;
+  }
+  
+  .p-datatable .p-datatable-tbody td:hover {
+    background-color:aliceblue;
+    cursor: pointer;
+  }
+  button.btn.btn-primary {
+  background-color: #2196F3;
+  border-color: #024fa1;
+}
+
+button.btn.btn-primary:hover {
+  background-color:gray;
+  border-color: whitesmoke;
+}
+.location-table-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
