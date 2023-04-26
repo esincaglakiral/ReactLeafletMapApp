@@ -1,0 +1,30 @@
+{
+  "name": "react-leaflet-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:init": "psql -U postgres -f ./server/db/init.sql",
+    "seeder": "npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all",
+    "db:drop": "npx sequelize db:drop",
+    "db:reset": "npm run db:drop && npm run seeder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.31.0",
+    "sequelize-cli": "^6.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
