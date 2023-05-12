@@ -17,26 +17,6 @@ export default function LocationTable({ setSelectedMarker }) {
   const [size] = useState(sizeOptions[0].value);
   const [globalFilter, setGlobalFilter] = useState("");
 
-  // const filterByValue = ()=>{
-
-  //   const filteredArray = markers.filter((marker) => {
-  //     const markerDescription = marker?.description?.toLowerCase();
-  //     const markerLat = marker?.latitude?.toString();
-  //     const markerLng = marker?.longitude?.toString();
-  //     return (
-  //       markerDescription.includes(globalFilter.toLowerCase()) ||
-  //       markerLat.includes(globalFilter) ||
-  //       markerLng.includes(globalFilter) ||
-  //       (marker.isActive === true && globalFilter.toLowerCase() === 'active')
-  //     );
-  //   });
-  //   if(filteredArray.length>0 ){
-  //     setFilteredMarkers(filteredArray)
-  //   } else {
-  //     setFilteredMarkers([]);
-  //   }
-  // }
-
   const filterByValue = () => {
     const filteredArray = markers.filter((marker) => {
       const markerDescription = marker?.description?.toLowerCase();
